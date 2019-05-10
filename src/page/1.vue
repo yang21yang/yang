@@ -1,12 +1,12 @@
 <template>
     <div>
-        <ul v-for="(item,index) in lidata">
+        <ul :v-for="(item,index) in lidata">
             <li><span :class="{active:index==isActive}"  @click="changeClass(index)"> {{item.name}}
             </span></li> 
         </ul>
         <!--实现多选：
 
-        <ul v-for="(item,index) in lidata">
+        <ul :v-for="(item,index) in lidata">
         <li><span :class="{active:item.checked}"  @click="changeClass(item)"> {{item.name}}</span>
         </li> -->
     </div>
