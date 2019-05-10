@@ -7,7 +7,7 @@
         
         <!--实现多选：
 
-        <ul :v-for="(item,index) in lidata">
+        <ul v-for="(item,index) in lidata">
         <li><span :class="{active:item.checked}"  @click="changeClass(item)"> {{item.name}}</span>
         </li> -->
     </div>
@@ -47,7 +47,6 @@
             item.checked=!item.checked
             }
             },
-            
             
         //限制三次：
             changeClass(item){
