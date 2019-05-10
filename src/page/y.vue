@@ -10,6 +10,8 @@
         <ul v-for="(item,index) in lidata">
         <li><span :class="{active:item.checked}"  @click="changeClass(item)"> {{item.name}}</span>
         </li> -->
+
+        <div>Creating a new branch is quick.</div>
     </div>
 </template>
 <script>
@@ -85,6 +87,7 @@
             //         return isSize
             //         },
             //     }
+            
     }
 </script>
 <style>
